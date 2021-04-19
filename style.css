@@ -1,9 +1,4 @@
 @import url(https://fonts.googleapis.com/css?family=Amaranth:400,400italic,700italic,700);
-.c-card * {
-  display: block;
-  box-sizing: border-box;
-}
-
 body {
   font-family: "Amaranth", sans-serif;
   text-align: center;
@@ -21,21 +16,35 @@ body {
   max-width: 350px;
   margin: 20px;
   cursor: pointer;
+  -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
   text-align: left;
   background: #fff;
-  box-shadow: 0 6px 10px -5px rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 0 6px 10px -5px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 6px 10px -5px rgba(0, 0, 0, 0.2);
 }
+
+.c-card * {
+  display: block;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
 .c-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 20px 20px -15px rgba(0, 0, 0, 0.3);
+  -webkit-transform: translateY(-5px);
+          transform: translateY(-5px);
+  -webkit-box-shadow: 0 20px 20px -15px rgba(0, 0, 0, 0.3);
+          box-shadow: 0 20px 20px -15px rgba(0, 0, 0, 0.3);
 }
+
 .c-card__image {
   max-width: 100%;
 }
+
 .c-card__body {
   padding: 20px;
 }
+
 .c-card__title {
   font-size: 15px;
   font-weight: 700;
@@ -44,14 +53,17 @@ body {
   padding: 0;
   text-transform: uppercase;
 }
+
 .c-card__subtitle {
   font-size: 13px;
   margin-top: 5px;
   padding: 0;
 }
+
 .c-card__intro {
   margin-bottom: 0;
 }
+
 .c-card__footer {
   padding: 20px;
   border-top: 1px solid #ddd;
@@ -64,13 +76,16 @@ body {
 .c-card--wide {
   max-width: 740px;
 }
+
 .c-card--wide .c-card__header {
   float: left;
 }
+
 .c-card--wide .c-card__body {
   float: left;
   padding-top: 30px;
 }
+
 .c-card--wide .c-card__footer {
   clear: both;
   text-align: center;
@@ -84,11 +99,15 @@ body {
   perspective: 1000;
   -webkit-perspective: 1000;
 }
+
 .c-card-flip__flipper {
   position: relative;
+  -webkit-transition: 0.8s ease-in-out;
   transition: 0.8s ease-in-out;
-  transform-style: preserve-3d;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
 }
+
 .c-card-flip__front, .c-card-flip__back {
   position: absolute;
   top: 0;
@@ -100,10 +119,13 @@ body {
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
 }
+
 .c-card-flip__back {
-  transform: rotateY(180deg);
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
   background: #ddd;
 }
+
 .c-card-flip__title {
   position: absolute;
   top: 0;
@@ -113,6 +135,9 @@ body {
   height: 50px;
   margin: auto;
 }
+
 .c-card-flip:hover .c-card-flip__flipper {
-  transform: rotateY(180deg);
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
 }
+/*# sourceMappingURL=style.css.map */
