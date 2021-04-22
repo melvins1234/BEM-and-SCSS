@@ -116,10 +116,10 @@ body {
 
         &__front,
         &__back {
+            @include cardSize();
             position: absolute;
             top: 0;
             left: 0;
-            @include cardSize();
             -webkit-backface-visibility: hidden;
             backface-visibility: hidden;
         }

@@ -109,13 +109,13 @@ body {
 }
 
 .c-card-flip__front, .c-card-flip__back {
-  position: absolute;
-  top: 0;
-  left: 0;
   width: 450px;
   height: 250px;
   perspective: 1000;
   -webkit-perspective: 1000;
+  position: absolute;
+  top: 0;
+  left: 0;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
 }
